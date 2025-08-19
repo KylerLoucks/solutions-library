@@ -1,0 +1,38 @@
+site_name: Solutions Library
+site_description: A curated set of repeatable, production-ready solution guides.
+site_url: https://kylerloucks.github.io/solutions-library/
+repo_url: https://github.com/kylerloucks/solutions-library
+repo_name: kylerloucks/solutions-library
+
+docs_dir: docs
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+
+plugins:
+  - search
+  - awesome-pages # Organize pages better https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
