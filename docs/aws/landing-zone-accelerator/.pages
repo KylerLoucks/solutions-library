@@ -1,8 +1,11 @@
 title: Landing Zone Accelerator
 nav:
   - Overview: index.md
+  - Setup Walkthrough: setup-walkthrough.md
   - Prerequisites: prerequisites.md
   - Architecture: architecture.md
+  - Setup Config Repo: setup-config-repo.md
+  - Configuration: configuration.md
   - Deployment: deployment.md
   - Customization Examples: customization-examples.md
   - Validation: validation.md
