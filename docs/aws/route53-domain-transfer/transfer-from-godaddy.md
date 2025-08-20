@@ -64,7 +64,7 @@ If you're importing DNS records into a terraform module, run `terraform plan` to
 ```bash
 Terraform will perform the following actions:
 
-  # module.amplo_records.aws_route53_record.this[" MX"] will be created
+  # module.records.aws_route53_record.this[" MX"] will be created
   + resource "aws_route53_record" "this" {
       + allow_overwrite = false
       + fqdn            = (known after apply)
@@ -79,11 +79,11 @@ Terraform will perform the following actions:
     }
 ```
 Then you can easily import based on what the comment at the top says:
-!!!warning "module.amplo_records.aws_route53_record.this[" MX"] will be created"
+!!!warning "module.records.aws_route53_record.this[" MX"] will be created"
 ```bash
 terraform import 'module.records.aws_route53_record.this[" MX"]' Z06353253219H5P6ZZ7L_example.com_MX
 ```
-The import value should follow this pattern: `<ZONE_ID><FQDN><TYPE>`
+!!!note "The import value should follow this pattern: `<ZONE_ID><FQDN><TYPE>`"
 
 6) Start the transfer in Route 53
 
